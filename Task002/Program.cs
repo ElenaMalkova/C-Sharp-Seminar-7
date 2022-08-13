@@ -28,11 +28,11 @@ void PrintArray(int[,] localArray)
 
 void FindElement(int[,] inArray, int x, int y)
 {
-    if (x >= inArray.GetLength(0) || y >= inArray.GetLength(1))
-{ 
-    Console.WriteLine("Такого элемента в массиве нет");
-}
-else Console.WriteLine($"Значение выбранного элемента: {inArray [x, y]}");
+    if (x >= inArray.GetLength(0) || y >= inArray.GetLength(1) || x < 1 || y < 1)
+    {
+        Console.WriteLine("Такого элемента в массиве нет");
+    }
+    else Console.WriteLine($"Значение выбранного элемента: {inArray[x, y]}");
 }
 
 
